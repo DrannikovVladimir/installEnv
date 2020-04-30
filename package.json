@@ -1,0 +1,24 @@
+{
+  "name": "installenv",
+  "version": "1.0.0",
+  "description": "Install Enveronment",
+  "main": "dist/index.js",
+  "bin": {
+    "test": "dist/bin/test.js"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production babel src --out-dir dist",
+    "prepublishOnly": "npm run build"
+  },
+  "files":[
+    "dist"
+  ],
+  "author": "Vladimir Drannikov \"mr.drannikov@gmail.com\"",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6"
+  }
+}
