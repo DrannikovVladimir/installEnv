@@ -1,5 +1,5 @@
 import { getName } from '../src/index.js';
 
-test('getName', () => {
+test('Print name please', () => {
   expect(getName('V')).toEqual('V');
 });

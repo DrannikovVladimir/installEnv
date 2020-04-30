@@ -4,7 +4,7 @@
   "description": "Install Enveronment",
   "main": "dist/index.js",
   "bin": {
-    "hello": "dist/bin/test.js"
+    "hello": "dist/bin/greeting.js"
   },
   "scripts": {
     "test": "jest",
@@ -14,6 +14,9 @@
   "files": [
     "dist"
   ],
+  "jest": {
+    "testEnvironment": "node"
+  },
   "author": "Vladimir Drannikov \"mr.drannikov@gmail.com\"",
   "license": "ISC",
   "devDependencies": {
@@ -21,6 +24,7 @@
     "@babel/core": "^7.9.6",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.6",
+    "babel-eslint": "^10.1.0",
     "babel-jest": "^25.5.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
