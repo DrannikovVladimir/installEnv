@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 13.x
+  - lts/*
 env:
   global:
    - CC_TEST_REPORTER_ID=d457307a5beedc252b1d85056e5eeaffbf0e892eaa79162f1946b63a7cc8f8c4
