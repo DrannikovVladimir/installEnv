@@ -1,12 +1,8 @@
-const sum = (...rest) => {
-  if (rest.length === 0) {
-    return null;
-  }
-  return rest.reduce((acc, item) => item + acc, 0);
-}
+const getName = (name) => name;
 
 const print = () => {
-  console.log(sum(3, 5));
-}
+  const myName = getName('Krowen');
+  console.log(`Hi ${myName}. Everything is allright!!!`);
+};
 
-export { sum, print };
+export { print, getName };

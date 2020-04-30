@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import sum from '../index.js';
+import { print } from '../index.js';
 
-sum(10, 20);
+print();
